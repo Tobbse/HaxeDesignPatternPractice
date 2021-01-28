@@ -1,7 +1,7 @@
 package strategy;
 
 import openfl.display.Sprite;
-import buttons.SquareButton;
+import util.SquareButton;
 
 class SpawnStrategyButton extends SquareButton {
     var _container:Sprite;

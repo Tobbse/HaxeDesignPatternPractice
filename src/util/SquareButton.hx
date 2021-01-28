@@ -1,4 +1,4 @@
-package buttons;
+package util;
 
 import openfl.text.TextField;
 import openfl.display.Sprite;

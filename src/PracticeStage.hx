@@ -1,5 +1,9 @@
+import decorator.DecoratorPractice;
+import util.PracticeHeadline;
+import proxy.ProxyPractice;
+import adapter.AdapterPractice;
 import openfl.geom.Point;
-import buttons.SquareButton;
+import util.SquareButton;
 import bridge.BridgePractice;
 import builder.BuilderPractice;
 import strategy.StrategyPractice;
@@ -23,12 +27,15 @@ class PracticeStage extends Stage {
 		_pages = [
 			StrategyPractice,
 			BuilderPractice,
-			BridgePractice
+			BridgePractice,
+			AdapterPractice,
+			ProxyPractice,
+			DecoratorPractice
 		];
 
 		_addPageButton();
+		_addSeparator();
 		_changePageToCurrentIndex();
-		trace ("Starting!");
 	}
 
 	public static function getInstance():PracticeStage {
@@ -51,6 +58,15 @@ class PracticeStage extends Stage {
 		addChild(pageButton);
 	}
 
+	function _addSeparator() {
+		var separator = new Sprite();
+		separator.y = 99;
+		separator.graphics.beginFill(0x000000, 1);
+        separator.graphics.drawRect(0, 0, APP_WIDTH, 1);
+		separator.graphics.endFill();
+		addChild(separator);
+	}
+
 	function _onPageButtonClicked() {
 		_currentPageIndex = _getNextPageIndex();
 		_changePageToCurrentIndex();
@@ -59,7 +75,9 @@ class PracticeStage extends Stage {
 	function _changePageToCurrentIndex() {
 		if (_currentPage != null && _currentPage.parent != null) removeChild(_currentPage);
 
-		_currentPage = Type.createInstance(_pages[_currentPageIndex], []);
+		var pageClass = _pages[_currentPageIndex];
+		_currentPage = Type.createInstance(pageClass, []);
+		_currentPage.addChild(new PracticeHeadline(Type.getClassName(pageClass)));
 		addChildAt(_currentPage, 0);
 	}
 

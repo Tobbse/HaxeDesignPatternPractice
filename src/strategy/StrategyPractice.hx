@@ -1,6 +1,6 @@
 package strategy;
 
-import buttons.SquareButton;
+import util.SquareButton;
 import strategy.CreateSquareStrategy;
 import strategy.CreateCircleStrategy;
 import strategy.CreateRectStrategy;
