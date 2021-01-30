@@ -1,0 +1,10 @@
+{
+    "shape": {
+        "width": 100,
+        "height": 50,
+        "type": "Rect",
+        "x": 500,
+        "y": 500,
+        "color": "0xff0000"
+    }
+}

@@ -10,7 +10,7 @@ class DecoratorPractice extends Sprite {
 
 		var encrypt = true;
 
-		var fileTextPrinter = new FileTextPrinter("someFileName.txt");
+		var fileTextPrinter = new FileTextPrinter("data/decorator.txt");
 		var staticTextPrinter = new StaticTextPrinter();
 
 		var upperCaseFileTextPrinter = new UpperCaseTextPrinterDecorator(fileTextPrinter);

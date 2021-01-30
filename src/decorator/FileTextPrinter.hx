@@ -1,7 +1,6 @@
 package decorator;
 
-import js.html.Blob;
-import js.html.FileReader;
+import haxe.Resource;
 
 class FileTextPrinter implements ITextPrinter {
 	var _fileName:String;
@@ -11,8 +10,7 @@ class FileTextPrinter implements ITextPrinter {
 	}
 
 	public function loadText():String {
-		var fileContent = "This is the content of a text file!"; // Let's pretend we loaded this from a file.
-		return fileContent;
+		return Resource.getString(_fileName);
 	}
 
 	public function printText(text:String) {
