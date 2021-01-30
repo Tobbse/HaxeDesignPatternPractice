@@ -1,3 +1,5 @@
+import observer.ObserverPractice;
+import composite.CompositePractice;
 import decorator.DecoratorPractice;
 import util.PracticeHeadline;
 import proxy.ProxyPractice;
@@ -30,7 +32,9 @@ class PracticeStage extends Stage {
 			BridgePractice,
 			AdapterPractice,
 			ProxyPractice,
-			DecoratorPractice
+			DecoratorPractice,
+			CompositePractice,
+			ObserverPractice
 		];
 
 		_addPageButton();

@@ -1,0 +1,1 @@
+Look at PracticeStage or EventManger to see a singleton example.

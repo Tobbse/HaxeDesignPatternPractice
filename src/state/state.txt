@@ -1,0 +1,2 @@
+Well, obviously I know what a state machine is. Just read my master thesis (in this folder).
+I've been using this at work countless times as well, so I'm not gonna go over this here again.
