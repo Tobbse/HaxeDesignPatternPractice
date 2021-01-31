@@ -1,5 +1,6 @@
 package observer;
 
+import openfl.events.Event;
 import openfl.events.MouseEvent;
 import openfl.display.Sprite;
 
@@ -12,6 +13,13 @@ class ObserverPractice extends Sprite {
 		addChild(new EllipseWithStageClickListener());
 
 		PracticeStage.getInstance().addEventListener(MouseEvent.CLICK, _onStageClicked);
+		addEventListener(Event.REMOVED_FROM_STAGE, _onRemovedFromStage);
+	}
+
+	function _onRemovedFromStage(event:Event) {
+		PracticeStage.getInstance().removeEventListener(MouseEvent.CLICK, _onStageClicked);
+		removeEventListener(Event.REMOVED_FROM_STAGE, _onRemovedFromStage);
+		PracticeStage.kill();
 	}
 
 	function _onStageClicked(event:MouseEvent) {

@@ -1,3 +1,4 @@
+import flyweight.FlyweightPractice;
 import observer.ObserverPractice;
 import composite.CompositePractice;
 import decorator.DecoratorPractice;
@@ -34,7 +35,8 @@ class PracticeStage extends Stage {
 			ProxyPractice,
 			DecoratorPractice,
 			CompositePractice,
-			ObserverPractice
+			ObserverPractice,
+			FlyweightPractice
 		];
 
 		_addPageButton();
@@ -45,6 +47,10 @@ class PracticeStage extends Stage {
 	public static function getInstance():PracticeStage {
 		if (_instance == null) _instance = new PracticeStage();
 		return _instance;
+	}
+
+	public static function kill() {
+		_instance = null;
 	}
 
 	public static function getRandomPosition() {
