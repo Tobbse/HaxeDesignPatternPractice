@@ -1,3 +1,4 @@
+import iterator.IteratorPractice;
 import flyweight.FlyweightPractice;
 import observer.ObserverPractice;
 import composite.CompositePractice;
@@ -25,7 +26,7 @@ class PracticeStage extends Stage {
 	var _pages:Array<Class<Sprite>>;
 
 	function new () {
-		super(APP_WIDTH, APP_HEIGHT, 0x00FFFF, App);
+		super(APP_WIDTH, APP_HEIGHT, 0x00ffff, App);
 
 		_pages = [
 			StrategyPractice,
@@ -36,7 +37,8 @@ class PracticeStage extends Stage {
 			DecoratorPractice,
 			CompositePractice,
 			ObserverPractice,
-			FlyweightPractice
+			FlyweightPractice,
+			IteratorPractice
 		];
 
 		_addPageButton();
@@ -55,7 +57,7 @@ class PracticeStage extends Stage {
 
 	public static function getRandomPosition() {
 		var randomX = Math.random() * APP_WIDTH;
-        var randomY = (Math.random() * (APP_HEIGHT - 100)) + 100;
+        var randomY = (Math.random() * (APP_HEIGHT - 150)) + 150;
         return new Point(randomX, randomY);
 	}
 

@@ -4,16 +4,17 @@ import openfl.display.BitmapData;
 import openfl.display.Sprite;
 
 class FlyweightPractice extends Sprite {
-    var numSquares = 10000;
+    var numSquares = 1000;
     var _images:Array<SpecificImage> = [];
     var _flyweightImages:Array<SpecificFlyweightImage> = [];
     var _specificImageModel:SpecificImageModel;
 
+    // TODO: this example seems stupid
 	public function new() {
         super();
 
-        //_addNormalSquares(); // ~50 MB Memory
-        _addFlyweightSquares(); // ~20 MB Memory
+        //_addNormalSquares(); // ~50 MB Memory with 10k squares
+        _addFlyweightSquares(); // ~20 MB Memory with 10k squares
     }
 
     function _addNormalSquares() {
