@@ -1,3 +1,4 @@
+import prototype.PrototypePractice;
 import iterator.IteratorPractice;
 import flyweight.FlyweightPractice;
 import observer.ObserverPractice;
@@ -38,7 +39,8 @@ class PracticeStage extends Stage {
 			CompositePractice,
 			ObserverPractice,
 			FlyweightPractice,
-			IteratorPractice
+			IteratorPractice,
+			PrototypePractice
 		];
 
 		_addPageButton();
