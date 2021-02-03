@@ -6,7 +6,6 @@
 
 	<source path="src" />
 	<haxelib name="openfl" />
-	<assets path="assets" />
 
 	<haxeflag name="-resource" value="data/decorator.txt" />
 	<haxeflag name="-resource" value="data/proxy.json" />

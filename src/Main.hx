@@ -27,7 +27,7 @@ class Main extends Sprite {
 	function new () {
 		super();
 
-		#if sys trace("File system can be used") #end
+		#if sys trace("File system can be used") #end // Spoiler: We can't
 
 		graphics.beginFill(0x00ffff, 1);
 		graphics.drawRect(0, 0, 1600, 900);
