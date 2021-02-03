@@ -73,7 +73,7 @@ class BuilderPractice extends Sprite {
 	}
 
 	function _placeRandomly(displayObject:DisplayObject) {
-		var position = PracticeStage.getRandomPosition();
+		var position = Main.getRandomPosition();
 		displayObject.x = position.x;
 		displayObject.y = position.y;
 		addChild(displayObject);

@@ -1,6 +1,5 @@
 package flyweight;
 
-import openfl.display.BitmapData;
 import openfl.display.Sprite;
 
 class FlyweightPractice extends Sprite {
@@ -9,7 +8,7 @@ class FlyweightPractice extends Sprite {
     var _flyweightImages:Array<SpecificFlyweightImage> = [];
     var _specificImageModel:SpecificImageModel;
 
-    // TODO: this example seems stupid
+    // TODO: This example seems stupid
 	public function new() {
         super();
 
@@ -21,7 +20,7 @@ class FlyweightPractice extends Sprite {
         for (i in 0...numSquares) {
             var image = new SpecificImage();
 
-            var position = PracticeStage.getRandomPosition();
+            var position = Main.getRandomPosition();
             image.x = position.x;
             image.y = position.y;
 
@@ -37,7 +36,7 @@ class FlyweightPractice extends Sprite {
         for (i in 0...numSquares) {
             var flyweightImage = new SpecificFlyweightImage(_specificImageModel);
 
-            var position = PracticeStage.getRandomPosition();
+            var position = Main.getRandomPosition();
             flyweightImage.x = position.x;
             flyweightImage.y = position.y;
 

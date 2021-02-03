@@ -12,14 +12,14 @@ class ObserverPractice extends Sprite {
 		addChild(new SquareWithStageClickListener());
 		addChild(new EllipseWithStageClickListener());
 
-		PracticeStage.getInstance().addEventListener(MouseEvent.CLICK, _onStageClicked);
+		Main.getInstance().addEventListener(MouseEvent.CLICK, _onStageClicked);
 		addEventListener(Event.REMOVED_FROM_STAGE, _onRemovedFromStage);
 	}
 
 	function _onRemovedFromStage(event:Event) {
-		PracticeStage.getInstance().removeEventListener(MouseEvent.CLICK, _onStageClicked);
+		Main.getInstance().removeEventListener(MouseEvent.CLICK, _onStageClicked);
 		removeEventListener(Event.REMOVED_FROM_STAGE, _onRemovedFromStage);
-		PracticeStage.kill();
+		Main.kill();
 	}
 
 	function _onStageClicked(event:MouseEvent) {
@@ -28,7 +28,7 @@ class ObserverPractice extends Sprite {
 	}
 
 	function _positionRandomly(shape:ShapeWithStageClickListener) {
-		var position = PracticeStage.getRandomPosition();
+		var position = Main.getRandomPosition();
 		shape.x = position.x;
 		shape.y = position.y;
 		addChild(shape);

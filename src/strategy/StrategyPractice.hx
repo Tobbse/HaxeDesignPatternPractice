@@ -32,7 +32,7 @@ class StrategyPractice extends Sprite {
 
 	function _addChangeStrategyButton() {
 		var changeStrategyButton = new SquareButton(100, 35);
-		changeStrategyButton.x = PracticeStage.APP_WIDTH - changeStrategyButton.width - 10;
+		changeStrategyButton.x = Main.WINDOW_WIDTH - changeStrategyButton.width - 10;
 		changeStrategyButton.y = 10;
 		changeStrategyButton.setText("Change spawning strategy");
 		changeStrategyButton.addClickCallback(_onChangeStrategyButtonClicked);

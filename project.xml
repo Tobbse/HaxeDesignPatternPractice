@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="HaxeDesignPatternPractice" version="1.0.0" />
+	<app main="Main" path="export" file="HaxeDesignPatternPractice" />
+
+	<source path="src" />
+	<haxelib name="openfl" />
+	<assets path="assets" />
+
+	<haxeflag name="-resource" value="data/decorator.txt" />
+	<haxeflag name="-resource" value="data/proxy.json" />
+	
+</project>

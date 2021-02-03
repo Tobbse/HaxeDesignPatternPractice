@@ -13,7 +13,6 @@ class ShapeWithStageClickListener extends Sprite {
 		addStageClickListener();
 	}
 
-	// TODO [observer]: subscribe / unsubscribe listeners when some button is clicked
 	public function addStageClickListener() {
 		if (_listener != null) return;
 		_listener = new StageClickListener();
@@ -38,7 +37,7 @@ class ShapeWithStageClickListener extends Sprite {
 	}
 
 	function _positionRandomly() {
-		var position = PracticeStage.getRandomPosition();
+		var position = Main.getRandomPosition();
 		x = position.x;
 		y = position.y;
 	}

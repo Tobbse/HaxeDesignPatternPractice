@@ -1,5 +1,6 @@
 package decorator;
 
+import openfl.Assets;
 import haxe.Resource;
 
 class FileTextPrinter implements ITextPrinter {
@@ -10,7 +11,12 @@ class FileTextPrinter implements ITextPrinter {
 	}
 
 	public function loadText():String {
-		return Resource.getString(_fileName);
+		var resourcePath = "data/decorator.txt";
+		var str:String = Resource.getString(resourcePath);
+		if (str == null) {
+			str = Assets.getText(resourcePath);
+		}
+		return str;
 	}
 
 	public function printText(text:String) {

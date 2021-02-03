@@ -4,8 +4,8 @@ import openfl.display.BitmapData;
 import openfl.display.Sprite;
 
 class SpecificImageModel extends Sprite {
-    public var bitmapData:BitmapData;
-    public var border:Sprite;
+    public final bitmapData:BitmapData;
+    public final border:Sprite;
 
 	public function new() {
         super();

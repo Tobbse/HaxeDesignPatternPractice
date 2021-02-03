@@ -24,7 +24,7 @@ class BridgePractice extends Sprite {
 	}
 
 	function _addShape(shape:Shape) {
-		var position = PracticeStage.getRandomPosition();
+		var position = Main.getRandomPosition();
 		shape.x = position.x;
 		shape.y = position.y;
 		addChild(shape);

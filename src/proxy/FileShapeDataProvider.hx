@@ -1,5 +1,6 @@
 package proxy;
 
+import openfl.Assets;
 import haxe.Json;
 import haxe.Resource;
 
@@ -7,6 +8,7 @@ class FileShapeDataProvider implements IShapeDataProvider {
 	var _jsonData:Dynamic;
 
 	public function new(fileName:String) {
+		//Assets.getText("")
 		var fileContent = Resource.getString(fileName);
 		_jsonData = Json.parse(fileContent).shape;
 	}

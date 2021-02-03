@@ -17,7 +17,7 @@ class SpawnStrategyButton extends SquareButton {
     }
 
     public function spawn() {
-        var position = PracticeStage.getRandomPosition();
+        var position = Main.getRandomPosition();
         var shape = _spawnStrategy.createShape(position.x, position.y);
         _container.addChild(shape);
     }

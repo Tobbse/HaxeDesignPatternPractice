@@ -45,7 +45,7 @@ class IteratorPractice extends Sprite {
 
         while (iterator.hasMore()) {
             var shape = iterator.getNext();
-            var position = PracticeStage.getRandomPosition();
+            var position = Main.getRandomPosition();
             shape.x = position.x;
             shape.y = position.y;
             _shapeContainer.addChild(shape);

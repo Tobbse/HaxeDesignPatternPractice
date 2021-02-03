@@ -36,7 +36,8 @@ class ShapeDisplayObjectBuilder implements IShapeBuilder {
 		_shape.graphics.endFill();
 	}
 
-	public function setText(text:String) {
+	public function setText(text:Null<String>) {
+		if (text == null) return;
 		var label = new TextField();
 		label.width = 150;
 		label.height = 100;

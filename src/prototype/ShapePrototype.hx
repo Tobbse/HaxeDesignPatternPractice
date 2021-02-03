@@ -21,7 +21,7 @@ class ShapePrototype extends Sprite {
         return _size;
     }
 
-    // TODO: Why the hell can't I use abstract and stuff??
+    // TODO: Investigate why I can't use abstracts.
     public function clone():ShapePrototype {
         trace ("dont call this function!!");
         return null;

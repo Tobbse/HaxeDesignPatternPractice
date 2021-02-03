@@ -1,7 +1,7 @@
 package observer;
 
 class StageClickListener implements IEventListener {
-	public static var TYPE = "type_StageClickListener";
+	public static inline final TYPE = "type_StageClickListener";
 
 	public function new() {}
 

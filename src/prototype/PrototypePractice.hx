@@ -15,7 +15,7 @@ class PrototypePractice extends Sprite {
         shape.draw();
 
         for (i in 0...amount) {
-            var position = PracticeStage.getRandomPosition();
+            var position = Main.getRandomPosition();
             var copy = shape.clone();
             copy.x = position.x;
             copy.y = position.y;

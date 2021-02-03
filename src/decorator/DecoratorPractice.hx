@@ -8,8 +8,6 @@ class DecoratorPractice extends Sprite {
 		super();
 		addChild(new PracticeInfoLabel("Check the console output."));
 
-		var encrypt = true;
-
 		var fileTextPrinter = new FileTextPrinter("data/decorator.txt");
 		var staticTextPrinter = new StaticTextPrinter();
 
