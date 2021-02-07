@@ -1,3 +1,4 @@
+import visitor.VisitorPractice;
 import memento.MementoPractice;
 import prototype.PrototypePractice;
 import iterator.IteratorPractice;
@@ -46,7 +47,8 @@ class Main extends Sprite {
 			FlyweightPractice,
 			IteratorPractice,
 			PrototypePractice,
-			MementoPractice
+			MementoPractice,
+			VisitorPractice
 		];
 		_addPageButton();
 		_addSeparator();
