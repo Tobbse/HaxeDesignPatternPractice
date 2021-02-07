@@ -36,18 +36,18 @@ class Main extends Sprite {
 		graphics.endFill();
 
 		_pages = [
-			StrategyPractice,
-			BuilderPractice,
-			BridgePractice,
 			AdapterPractice,
-			ProxyPractice,
-			DecoratorPractice,
+			BridgePractice,
+			BuilderPractice,
 			CompositePractice,
-			ObserverPractice,
+			DecoratorPractice,
 			FlyweightPractice,
 			IteratorPractice,
-			PrototypePractice,
 			MementoPractice,
+			ObserverPractice,
+			PrototypePractice,
+			ProxyPractice,
+			StrategyPractice,
 			VisitorPractice
 		];
 		_addPageButton();
