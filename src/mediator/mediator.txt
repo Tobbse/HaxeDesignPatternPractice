@@ -1,4 +1,4 @@
-The Mediator pattern should be very clear, I use it at work every day.
+The Mediator pattern should be very clear to me, I use it at work every day.
 
 A mediator is a behavioral pattern that is used as a communication layer
 between other objects. In many cases it servers as a layer between actors,

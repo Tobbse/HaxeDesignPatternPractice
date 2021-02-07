@@ -1,9 +1,3 @@
-The Factory pattern should be very clear, I use it at work every day.
+The Factory pattern should be very clear to me, I use it at work every day.
 
 It is a creational design pattern that provides a central place to create objects of certain types.
-
-Within Forge, we actually use factory methods only, we don't exactly follow the factory pattern.
-It basically just iterates over some enum or string, in order to call the correct fuction or return the correct type. 
-
-It can actually be much more complicated than that. Check this link, also for abstract factories:
-https://refactoring.guru/design-patterns/factory-method
