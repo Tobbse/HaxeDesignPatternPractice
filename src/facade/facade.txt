@@ -2,3 +2,6 @@ A facade is a design pattern that hides the complexity of some underlying code (
 It acts as an interface providing a useable API for the internal structure.
 
 An example for this is the CollectingMinigameController or PVPArenaController that I've implemented in FOE.
+
+Another example for this is the CityEntityProxy that we are using in Forge, which is actually not a proxy for
+some kind of building, but rather a facade providing an API to working with the building.

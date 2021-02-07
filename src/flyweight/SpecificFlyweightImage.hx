@@ -12,7 +12,7 @@ class SpecificFlyweightImage extends DisplayObjectContainer {
     }
 
     public function draw() {
-        addChild(_imageModel.border);
+        this.alpha = _imageModel.alpha;
         addChild(new Bitmap(_imageModel.bitmapData));
     }
 }

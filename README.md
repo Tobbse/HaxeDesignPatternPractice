@@ -1,2 +1,2 @@
 # HaxeDesignPatternPractice
-This is just some Design Pattern practice I wrote in haxe.
+A collection of examples for common design patterns that I implemented in Haxe in order to gain more practice using them.

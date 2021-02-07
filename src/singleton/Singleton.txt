@@ -1,1 +1,10 @@
 Look at Main or EventManger to see a singleton example.
+
+The singleton pattern is a creational pattern.
+It makes sure that there is only one specific object of
+a given class. It does so by making the constructor of this
+object private. The instance can only be accessed by calling
+a function like `getInstance`. Usually, if this instance was
+not yet created and `null`, it is then created.
+Therefore, no matter when you access the object, you will always
+get an instance of the class and it will always be the same one. 

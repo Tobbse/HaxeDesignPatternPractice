@@ -1,6 +1,5 @@
 package proxy;
 
-import openfl.Assets;
 import haxe.Json;
 import haxe.Resource;
 

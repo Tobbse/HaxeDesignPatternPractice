@@ -3,6 +3,11 @@ package prototype;
 import openfl.geom.Point;
 import openfl.display.Sprite;
 
+/**
+    The protoype pattern is a creational pattern that is used to clone objects.
+
+    In this case, we create some exact copies of already existing shapes.
+**/
 class PrototypePractice extends Sprite {
 	public function new() {
         super();

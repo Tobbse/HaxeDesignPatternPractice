@@ -21,9 +21,9 @@ class Main extends Sprite {
 
 	static var _instance:Main;
 
+	final _pages:Array<Class<Sprite>>;
 	var _currentPageIndex:Int = 0;
 	var _currentPage:Sprite;
-	var _pages:Array<Class<Sprite>>;
 
 	function new () {
 		super();
@@ -48,7 +48,6 @@ class Main extends Sprite {
 			PrototypePractice,
 			MementoPractice
 		];
-
 		_addPageButton();
 		_addSeparator();
 		_changePageToCurrentIndex();

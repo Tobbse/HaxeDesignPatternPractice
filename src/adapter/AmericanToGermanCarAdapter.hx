@@ -1,6 +1,6 @@
 package adapter;
 
-class AmericanCarAdapter extends GermanCar {
+class AmericanToGermanCarAdapter extends GermanCar {
 	var _mileToKmMultiplier = 1.60934;
 	var _americanCar:AmericanCar;
 

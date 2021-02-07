@@ -1,1 +1,11 @@
 The Mediator pattern should be very clear, I use it at work every day.
+
+A mediator is a behavioral pattern that is used as a communication layer
+between other objects. In many cases it servers as a layer between actors,
+controllers and models on one side and the view on the other side. Other
+objects would only communicate with this view via the mediator.
+
+It helps reducing dependencies and organize the collaboration between classes
+acording to the Single Responsibility, that would otherwise be chaotic.
+You can also create new mediators without changing the (view) components,
+achieving a higher degree of the Open/Closed principle.

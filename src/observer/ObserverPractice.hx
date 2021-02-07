@@ -4,6 +4,13 @@ import openfl.events.Event;
 import openfl.events.MouseEvent;
 import openfl.display.Sprite;
 
+/**
+	The behavioral pattern observer creates a subscription mechanic. Objects that
+	are interested in some kind of event can subscribe to an EventManager in order
+	to be notified when this event happens.
+	In this case, some shape ojects are interested in getting notified whenever
+	the stage is clicked, and as a reaction change their color.
+**/
 class ObserverPractice extends Sprite {
 	public function new() {
 		super();

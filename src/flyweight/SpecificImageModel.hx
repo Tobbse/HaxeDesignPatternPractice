@@ -1,18 +1,20 @@
 package flyweight;
 
 import openfl.display.BitmapData;
-import openfl.display.Sprite;
 
-class SpecificImageModel extends Sprite {
+class SpecificImageModel {
+    public final sizeX:Float;
+    public final sizeY:Float;
+    public final color:UInt;
+    public final alpha:Float;
     public final bitmapData:BitmapData;
-    public final border:Sprite;
 
-	public function new() {
-        super();
-        bitmapData = new BitmapData(3, 3, false, 0xff0000);
+	public function new(sizeX:Float, sizeY:Float, color:UInt, alpha:Float) {
+        this.sizeX = sizeX;
+        this.sizeY = sizeY;
+        this.color = color;
+        this.alpha = alpha;
 
-        border = new Sprite();
-        border.graphics.beginFill(0xffffff, 1);
-        border.graphics.drawRect(-2, -2, bitmapData.width + 4, bitmapData.height + 4);
+        bitmapData = new BitmapData(Std.int(this.sizeX), Std.int(this.sizeY), false, this.color);
     }
 }

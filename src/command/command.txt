@@ -1,1 +1,13 @@
 The Command pattern should be very clear, I use it at work every day.
+
+Command is a behavioral pattern, which takes care of one specific common task or request.
+It contains all information about this task and takes care about reducing the amount of
+duplicated code throughout the code base, by having it in the command as a central place.
+
+It does so by converting an operation into an object.
+
+The common definition of commands allows us to pass them around as parameters, for example
+in order to combine them with the strategy pattern. At Forge, we instead use the Robotlegs-version
+of commands, which work a bit differently. They simply just centralize a certain task while
+listening for a trigger. 
+They do however have the same purpose of heavily enforcing the single responsibility principle.

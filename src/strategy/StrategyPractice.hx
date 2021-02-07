@@ -8,6 +8,16 @@ import strategy.ICreateShapeStrategy;
 import strategy.SpawnStrategyButton;
 import openfl.display.Sprite;
 
+/**
+	The strategy pattern is a behavioral pattern that is used to make a
+	certain algorithm or action interchangeable.
+	The action that should be performed is encapsulated in an object.
+	The object containing the strategy can be interchanged on the fly.
+
+	In this example, we are using different strategies to spawn shapes, like
+	`CreateCircleStrategy` and `CreateSquareStrategy`. When you click a button,
+	this strategy is changed. When you click another button, a button is spawned.
+**/
 class StrategyPractice extends Sprite {
 	var _spawnShapeButton:SpawnStrategyButton;
 

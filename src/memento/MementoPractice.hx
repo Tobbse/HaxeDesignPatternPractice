@@ -4,6 +4,12 @@ import openfl.geom.Point;
 import util.SquareButton;
 import openfl.display.Sprite;
 
+/**
+	The memento pattern is used in order to preserve a state of an object,
+	and restore it if needed. It is a behavioral pattern.
+	In this case, some state of a shape is stored as a snapshot and later
+	restored on a button press.
+**/
 class MementoPractice extends Sprite {
 	final _numShapes = 50;
 	final _shapes:Array<{memento:ShapeSnapshot, shape:MemoryShape}> = [];
